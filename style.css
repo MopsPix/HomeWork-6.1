@@ -1,0 +1,76 @@
+.first {
+  color: green;
+}
+.first:hover {
+  color: yellow;
+}
+.first:active {
+  color: red;
+}
+
+p:before {
+  content: "\2602";
+}
+p:after {
+  content: "*";
+}
+
+.second {
+  color: purple;
+}
+.second:hover {
+  color: brown;
+}
+.second:active {
+  color: gold;
+}
+
+input:focus {
+  border-color: green;
+}
+
+.parent p:nth-child(even) {
+  background: grey;
+}
+
+.before:before {
+  font-size: 2em;
+  font-family: Georgia;
+  color: red;
+  content: "H";
+}
+.before:last-child:before {
+  content: "G";
+}
+
+.message {
+  width: 30px;
+  height: 20px;
+  background: #000;
+  position: relative;
+}
+.message:before {
+  border: 7px solid transparent;
+  border-right-color: #000;
+  display: block;
+  position: absolute;
+  right: 100%;
+  top: 3px;
+  content: "";
+}
+
+.message{
+  width: 30px;
+  height: 20px;
+  background: #000;
+  position: relative;
+  &:before{
+    border: 7px solid transparent;
+    border-right-color:#000;
+    display: block;
+    position: absolute;
+    right: 100%;
+    top: 3px;
+    content: ""
+  }
+}
