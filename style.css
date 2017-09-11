@@ -9,6 +9,7 @@
 }
 
 p:before {
+float:left;
   content: "\2602";
 }
 p:after {
@@ -33,11 +34,10 @@ input:focus {
   background: grey;
 }
 
-.before:before {
+.before:first-letter {
   font-size: 2em;
   font-family: Georgia;
   color: red;
-  content: "\2602" "H";
 }
 
 .message {
